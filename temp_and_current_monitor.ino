@@ -109,10 +109,10 @@ void setup()
 
   tempSensors.begin();
 
-  // Calibration constant: 62 (62 was decide after testing, this may vary for other units) 
+  // Calibration constant: 65 (65 was decide after testing, this may vary for other units) 
   // for SCT-013-030 with 1V output to 1V ADC (NodeMCU)
   // Adjust if needed after testing
-  emon1.current(CURRENT_SENSOR_PIN, 62);
+  emon1.current(CURRENT_SENSOR_PIN, 65);
 
   // Setup a function to be called every second
   timer.setInterval(1000L, sendCurrentTemp);
